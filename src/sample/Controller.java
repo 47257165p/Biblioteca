@@ -21,9 +21,27 @@ public class Controller {
     public TextField altaLibroEditorial;
     public TextField altaLibroAño;
     public Button guardarAltaLibro;
+
     public MenuItem bajaLibro;
+    public TextField bajaLibroTitulo;
+    public TextField bajaLibroEditorial;
+    public TextField bajaLibroAño;
+    public Button darBajaLibro;
+
     public MenuItem modificarLibro;
+    public TextField modificarLibroTitulo;
+    public TextField modificarLibroEditorial;
+    public TextField modificarLibroAño;
+    public Button modificarLibros;
+
     public MenuItem buscarLibro;
+    public TextField buscarLibroTitulo;
+    public TextField buscarLibroEjemplares;
+    public TextField buscarLibroPaginas;
+    public TextField buscarLibroEditorial;
+    public TextField buscarLibroAño;
+    public Button buscarLibros;
+
     public MenuItem altaSocio;
     public MenuItem bajaSocio;
     public MenuItem modificarSocio;
@@ -33,6 +51,7 @@ public class Controller {
     public MenuItem sociosPrestados;
     public MenuItem prestamosExcedidosSocios;
     public MenuItem prestamosExcedidosLibros;
+
     private ArrayList<Libro> libros;
     private ArrayList<Socio> socios;
     private ArrayList<Prestamo> prestamos;
@@ -55,72 +74,68 @@ public class Controller {
             e.printStackTrace();
         }
     }
-    /*public void initialize()
-    {
-        guardarAltaLibro.requestFocus();
-    }*/
     public void altaLibro(ActionEvent actionEvent)
     {
-        nuevaVentana("altaLibro.fxml", "Alta de libro");
+        nuevaVentana("layouts/libro/altaLibro.fxml", "Alta de libro");
     }
 
     public void bajaLibro(ActionEvent actionEvent)
     {
-        nuevaVentana("bajaLibro.fxml", "Baja de libro");
+        nuevaVentana("layouts/libro/bajaLibro.fxml", "Baja de libro");
     }
 
     public void modificarLibro(ActionEvent actionEvent)
     {
-        nuevaVentana("modificarLibro.fxml", "Modificar el libro");
+        nuevaVentana("layouts/libro/modificarLibro.fxml", "Modificar el libro");
     }
 
     public void buscarLibro(ActionEvent actionEvent)
     {
-        nuevaVentana("buscarLibro.fxml", "Buscar un libro");
+        nuevaVentana("layouts/libro/buscarLibro.fxml", "Buscar un libro");
     }
 
     public void altaSocio(ActionEvent actionEvent)
     {
-        nuevaVentana("altaSocio.fxml", "Alta de socio");
+        nuevaVentana("layouts/socio/altaSocio.fxml", "Alta de socio");
     }
 
     public void bajaSocio(ActionEvent actionEvent)
     {
-        nuevaVentana("bajaSocio.fxml", "Baja de socio");
+        nuevaVentana("layouts/socio/bajaSocio.fxml", "Baja de socio");
     }
 
     public void modificarSocio(ActionEvent actionEvent)
     {
-        nuevaVentana("modificarSocio.fxml", "Modificar un socio");
+        nuevaVentana("layouts/socio/modificarSocio.fxml", "Modificar un socio");
     }
 
     public void buscarSocio(ActionEvent actionEvent)
     {
-        nuevaVentana("buscarSocio.fxml", "Buscar un socio");
+        nuevaVentana("layouts/socio/buscarSocio.fxml", "Buscar un socio");
     }
 
     public void prestar(ActionEvent actionEvent)
     {
-        nuevaVentana("prestar.fxml", "Prestamo de libro");
+        nuevaVentana("layouts/prestamo/prestar.fxml", "Prestamo de libro");
     }
 
     public void librosPrestados(ActionEvent actionEvent)
     {
-        nuevaVentana("librosPrestados.fxml", "Libros en prestamo");
+        nuevaVentana("layouts/prestamo/librosPrestados.fxml", "Libros en prestamo");
     }
 
     public void sociosPrestados(ActionEvent actionEvent)
     {
-        nuevaVentana("sociosPrestados.fxml", "Socios con prestamos");
+        nuevaVentana("layouts/prestamo/sociosPrestados.fxml", "Socios con prestamos");
     }
 
     public void prestamosExcedidosSocios(ActionEvent actionEvent)
     {
-        nuevaVentana("prestamosExcedidosSocios.fxml", "Prestamos excedidos por socios");
+        nuevaVentana("layouts/prestamo/prestamosExcedidosSocios.fxml", "Prestamos excedidos por socios");
     }
 
     public void prestamosExcedidosLibros(ActionEvent actionEvent)
     {
-        nuevaVentana("prestamosExcedidosLibros.fxml", "Prestamos excedidos por libros");
+        nuevaVentana("layouts/prestamo/prestamosExcedidosLibros.fxml", "Prestamos excedidos por libros");
     }
 }
