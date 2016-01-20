@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="altaLibroTitulo" focusTraversable="false" layoutX="94.0" layoutY="65.0" promptText="Titulo" />
+      <TextField fx:id="altaLibroEjemplares" focusTraversable="false" layoutX="94.0" layoutY="107.0" promptText="Numero de ejemplares" />
+      <TextField fx:id="altaLibroPaginas" focusTraversable="false" layoutX="94.0" layoutY="188.0" promptText="Paginas" />
+      <TextField fx:id="altaLibroEditorial" focusTraversable="false" layoutX="94.0" layoutY="148.0" promptText="Editorial" />
+      <TextField fx:id="altaLibroAño" focusTraversable="false" layoutX="94.0" layoutY="228.0" promptText="Año de edicion" />
+      <Button fx:id="guardarAltaLibro" layoutX="145.0" layoutY="309.0" mnemonicParsing="false" text="Guardar" />
+   </children>
+</AnchorPane>
